@@ -88,9 +88,9 @@ android {
         disable 'BlockedPrivateApi'
     }
 
-    dexOptions {
-        jumboMode = true
-    }
+//    dexOptions {
+//        jumboMode = true
+//    }
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
@@ -99,7 +99,9 @@ android {
         coreLibraryDesugaringEnabled true
     }
 
-
+	buildFeatures {
+        buildConfig true
+    }
     defaultConfig {
         minSdkVersion 19
         targetSdkVersion 34
